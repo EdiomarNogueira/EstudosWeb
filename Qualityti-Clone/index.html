@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link rel="stylesheet" href="/Qualityti-Clone/CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="/Qualityti-Clone/img/icon-qti-logo.png.png" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#bemvindo">Bem Vindo</a>
+                </li>
+                <li>
+                    <a href="#qualityinternet">Quality Internet</a>
+                </li>
+                <li>
+                    <a href="#soucliente">Sou cliente</a>
+                </li>
+                <li>
+                    <a href="#faleconosco">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <script>
+        window.onhashchange = function(e){
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldMenu = document.querySelector(`.menu [href='#${oldURL}']`)
+            const newMenu = document.querySelector(`.menu [href='#${newURL}']`)
+            oldMenu && oldMenu.classList.remove('selected')
+            newMenu && newMenu.classList.add('selected')
+        }
+    </script>
+</body>
+
+</html>

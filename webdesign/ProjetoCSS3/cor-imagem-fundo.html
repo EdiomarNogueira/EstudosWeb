@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cor e imagem de fundo</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+        /*  body {
+                background-color: red;
+                background-color: #f3f3f3;
+            }
+            .fundo {
+                background-color: blue;
+                color: white;
+            }   */
+                body {
+                    background-image: url('imagens/yoshi.png');
+                    background-repeat: repeat;
+                    background-repeat: repeat-x;
+                    background-repeat: repeat-y;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-attachment: scroll;
+                    /*Primeiro valor: left, center, right*/
+                    /*Segundo valor: top, center, bottom*/
+                    background-position: left center;
+                }
+                .fundo{
+                        background: blue url('imagens/yoshi.png')
+                        no-repeat scroll left top;
+                }
+        </style>
+    </head>
+        <body class="fundo">
+            <!-- <h1 class="fundo"> Conteudo de título 1</h1> -->
+            <h1> Conteudo de título 1</h1>
+
+            <p>
+                Lorem <strong>ipsum dolor</strong> sit <em>amet</em>, consectetur adipiscing elit. 
+                In eu volutpat nulla. Aliquam eu molestie tortor, nec 
+                consequat eros. Proin commodo molestie congue. Etiam 
+                lacinia finibus augue, ac pulvinar ipsum imperdiet sed. 
+                Phasellus id magna lectus.
+            </p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>
+                Lorem <strong>ipsum dolor</strong> sit <em>amet</em>, consectetur adipiscing elit. 
+                In eu volutpat nulla. Aliquam eu molestie tortor, nec 
+                consequat eros. Proin commodo molestie congue. Etiam 
+                lacinia finibus augue, ac pulvinar ipsum imperdiet sed. 
+                Phasellus id magna lectus.
+            </p>
+        </body>
+
+</html>

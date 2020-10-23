@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="shortcut icon" href="/Qualityti-Site/IMG/Navbar e Rodape/favicon.ico.ico" />
+    <link rel="stylesheet" href="/Qualityti-Site2/CSS/index.css">
+    <link rel="stylesheet" href="/Qualityti-Site2/CSS/slide.css">
+    <link rel="stylesheet" href="/Qualityti-Site2/CSS/parallax.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+    <!--Metas do Site Original-->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Pagina inicial da Quality-TI. Quality-Internet, sua melhor experiência 
+    em conectividade em Vitória da Conquista. Melhor velocidade, estabilidade e preço.">
+    <meta name="keywords" content="provedor, internet, fibra, ótica, fibra-ótica, net, vitória da conquista, 
+    conquista, vdc, vca, quality-internet, quality-tv, quality, tv, iptv, planos, assinatura, velocidade, 
+    estabilidade, conexão, conectividade, filmes, jogos, séries, site, qualityti.net, home, homepage, inicio,
+     scm, isp">  
+    <!--Fim dos Metas-->
+    <title>Quality Internet</title>
+</head>
+<body id="body">
+
+    <div class="container"> 
+    <!--Inicio do Header--> 
+        <header class="qti-header">
+            
+            <div class="qti-header-logo">
+                <a href="/Qualityti-Site/index.html" class="ui-link ui-widget">
+                    <img id="top-logo" src="/Qualityti-Clone/img/icon-qti-logo.png.png" alt="Logo Quality-Ti" />
+                </a>
+            </div>
+
+            <div class="qti-header-button" onclick="renderVerticalMenu()">☰</div>
+            
+
+            <div class="menu-topo">
+                <ul >
+                    <li>
+                        <a href="#bemvindo" class="ui-link ui-widget" title="Bem Vindo">Bem Vindo</a>
+                    </li>
+                    <li>
+                        <a href="#qualityinternet" class="ui-link ui-widget" title="Qualityti-Internet">Quality Internet</a>
+                    </li>
+                    <li>
+                        <a href="#soucliente" class="ui-link ui-widget" title="Sou cliente">Sou cliente</a>
+                    </li>
+                    <li>
+                        <a href="#faleconosco" class="ui-link ui-widget" title="Fale Conosco">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="ui-link ui-widget" title="Sobre">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    <!--Inicio do Header--> 
+    
+
+        <main class="qti-main">
+            <section class="qti-slider">
+
+                <div class="controle-slide">
+                    <div class="anterior" onclick="anterior()"> </div>
+                    <div class="proximo" onclick="proximo()">  </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <picture class="qti-banner1" id="qti-banner1">
+                            <div class="texto-slide01-img01">
+                                <h1>BEM VINDO À <br><strong>QUALITY-TI</strong></h1>
+                                <h2>Sua melhor <strong>EXPERIÊNCIA</strong> em <strong>CONECTIVIDADE</strong></h2>
+                            </div>
+
+                            <div class="caixa1">
+                                Caixa 1
+                            </div>
+                            <!--
+                            <source media="(min-width: 900px)" srcset="/Qualityti-Site/IMG/index/banner_001-desktop.png"></source>
+                            <source media="(min-width: 500px)" srcset="/Qualityti-Site/IMG/index/banner_001-tablet.png"></source>
+                            <img alt="Homem utilizando celular sobre o símbolo da Qualty-TI" src="/Qualityti-Site/IMG/index/banner_001-mobile.png" />
+                            -->
+                        </picture>
+                    </li>
+                    <li>
+                        <picture class="qti-banner2" id="qti-banner2">
+                        <div class="texto-slide01-img02">
+                            <h2><strong>CONECTE-SE</strong> às <br>
+                            <h2>suas<strong> SÉRIES</strong> do seu<br></h2>
+                            <h2><strong>MELHOR </strong> jeito!</h2>                        </div>
+                            
+                            <div class="caixa2">
+                                Caixa 2
+                            </div>
+
+                        <!--<source media="(min-width: 900px)" srcset="/Qualityti-Site/IMG/index/banner_002-desktop.png"></source>
+                        <source media="(min-width: 500px)" srcset="/Qualityti-Site/IMG/index/banner_002-tablet.png"></source>
+                        <img alt="Homem utilizando celular sobre o símbolo da Qualty-TI" src="/Qualityti-Site/IMG/index/banner_002-mobile.png" />
+                        -->
+                    </picture>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section id="section_campany-values" class="d-b qti-section qti-text--section g-pri">
+                <div>
+                    <h1>O que Ofertamos?</h1>
+                    <h2>O que Ofertamos?</h2>
+                </div>
+                <p>
+                    Mais que internet, inspiramos a conectividade. O que te conecta ao mundo? Queremos manter essa conexão. Não temos clientes... TEMOS 
+                    CONECTADOS. Viva uma nova EXPERIÊNCIA em conectividade.
+                </p>
+
+            </section>
+
+            
+
+        </main>
+    
+        <footer class="footer">
+            
+        </footer>
+    </div>
+    <script> /*Marcação do Menu*/
+        window.onhashchange = function(e){
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldMenu = document.querySelector(`.menu-topo [href='#${oldURL}']`)
+            const newMenu = document.querySelector(`.menu-topo [href='#${newURL}']`)
+            oldMenu && oldMenu.classList.remove('selected')
+            newMenu && newMenu.classList.add('selected')
+        }
+    </script>
+    <script type="text/javascript" src="/Qualityti-Site/JS/controleSlider.js"></script>
+
+</body>
+</html>
+

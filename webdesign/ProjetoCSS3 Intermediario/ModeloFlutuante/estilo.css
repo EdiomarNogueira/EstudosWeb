@@ -1,0 +1,56 @@
+/*
+Elementos flutuantes
+*/
+
+.conteudo {
+    background: blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+   
+}
+
+#principal {
+    border: 5px solid red;
+    background-color: cadetblue;
+}
+.conteudo-zero {
+    background: red;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+
+}
+.clear {
+    clear: left;
+}
+
+
+/*.
+.conteudo1 {
+    background: red;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+
+.conteudo-0 {
+    background: red;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+
+}
+
+.conteudo1 {
+    background: red;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    float: right;
+}*/
